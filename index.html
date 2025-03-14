@@ -12,172 +12,189 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-   <div class="bg-[#F5F7FA] w-full h-[90vh]">
+    <div class="bg-[#f5f7fa] w-full md:min-h-[70vh] lg:h-[90vh]">
         <nav class="">
-            <div class="flex sm:flex-wrap justify-between items-center w-[85%] h-[10vh] m-auto" id="nav">
-                <div class="w-[10%]" id="logo">
+            <div class="w-[90%] flex justify-between items-center lg:w-[85%] h-[10vh] m-auto" id="nav">
+                <div class="w-1/4 md:w-1/6 lg:w-[10%]" id="logo">
                     <a href="#">
                         <img src="Images/Logo.svg" alt="Logo">
                     </a>
                 </div>
-
-                <div class="w-[45%]" id="nav_links">
-                    <ul class="flex justify-between items-center">
-                        <li class="font-medium text-[16px]"><a href="#">Home</a></li>
-                        <li class="text-[16px]"><a href="#">Service</a></li>
-                        <li class="text-[16px]"><a href="#">Feature</a></li>
-                        <li class="text-[16px]"><a href="#">Product</a></li>
-                        <li class="text-[16px]"><a href="#">Testimonial</a></li>
-                        <li class="text-[16px]"><a href="#">FAQ</a></li>
+    
+                <div class="hidden lg:flex flex-wrap lg:w-[45%]" id="nav_links">
+                    <ul class="lg:flex lg:justify-between lg:items-center lg:w-full">
+                        <li><a href="#" class="text-base font-medium">Home</a></li>
+                        <li><a href="#" class="text-base">Service</a></li>
+                        <li><a href="#" class="text-base">Feature</a></li>
+                        <li><a href="#" class="text-base">Product</a></li>
+                        <li><a href="#" class="text-base">Testimonial</a></li>
+                        <li><a href="#" class="text-base">FAQ</a></li>
                     </ul>
                 </div>
-
-                <div class="w-[15%]" id="login">
-                    <ul class="flex justify-between items-center">
-                        <li class="pt-2.5 pb-2.5 pl-5 pr-5 text-[#4CAF4F] font-medium"><a href="#">Login</a></li>
-                        <li class="bg-[#4CAF4F] pt-2.5 pb-2.5 pl-5 pr-5 text-white font-medium rounded-lg m-auto cursor-pointer"><a href="#">Sign up</a></li>
-                    </ul>
+    
+                <div class="hidden lg:flex justify-between items-center" id="login">
+                    <a href="#" class="text-[#4CAF4F] lg:px-5 lg:py-2.5 text-sm leading-5 font-medium">Login</a>
+                    <a href="#" class="bg-[#4CAF4F] lg:px-5 lg:py-2.5 text-white text-sm leading-5 font-medium m-auto rounded-lg">Sign up</a>
                 </div>
+    
+                <!-- Mobile Menu Button -->
+                 <button class="lg:hidden" id="menu-btn">
+                    <img src="Images/Burger.svg" alt="Menu">
+                 </button>
             </div>
         </nav>
 
-        <div class="flex justify-around items-center mt-20 w-[85%] m-auto" id="hero_section">
-            <div class="w-[55%]" id="hero_text">
-                <div class="mb-8">
-                    <h1 class="text-[#4D4D4D] font-semibold text-[64px] mb-4 leading-[76px]">Lessons and insights <br><span class="text-[#4CAF4F]">from 8 years</span></h1>
-                    <p class="text-[#717171] text-base font-normal leading-6">Where to grow your business as a photographer: site or social media?</p>
-                </div>
-                <button class="bg-[#4CAF4F] pt-3.5 pb-3.5 pl-8 pr-8 text-white font-medium rounded-sm">
-                    <a href="#">Register</a>
-                </button>
+        <div class="flex flex-col-reverse md:flex-row justify-between items-center mt-10 w-[90%] md:w-[85%] m-auto text-center md:text-left">
+            <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                <h1 class="text-[#4D4D4D] font-semibold text-3xl md:text-5xl lg:text-[64px] leading-tight md:leading-24 lg:leading-[76px]">
+                    Lessons and insights <br><span class="text-[#4CAF4F]">from 8 years</span>
+                </h1>
+                <p class="text-[#717171] text-base font-normal md:leading-6 mt-4">
+                    Where to grow your business as a photographer: site or social media?
+                </p>
+                <button class="mt-6 bg-[#4CAF4F] text-white py-3 px-6 rounded-sm md:pt-3.5 md:pb-3.5 md:pl-8 md:pr-8 font-medium">Register</button>
             </div>
 
-            <div class="w-[30%]" id="hero_image">
-                <img src="Images/Illustration.svg" alt="">
+            <div class="w-full md:w-1/3">
+                <img src="Images/Illustration.svg" alt="" class="w-full">
             </div>
         </div>
-   </div>
+    </div>
 
-   <div class="">
-        <div class="text-center mt-20 w-[85%] m-auto" id="service">
-            <div>
-                <h2 class="text-[#4D4D4D] text-4xl font-semibold mb-2 leading-11">Manage your entire community <br>in a single system</h2>
-                <p class="text-[#717171] text-base font-normal leading-6">Who is Nextcent suitable for?</p>
+    <div class="w-[90%] lg:w-[85%] m-auto mt-16 text-center">
+        <h2 class="text-[#4D4D4D] text-2xl md:text-4xl font-semibold md:leading-11">Manage your entire community in a single system</h2>
+        <p class="text-[#717171] text-base mt-2 font-normal md:leading-6">Who is Nextcent suitable for?</p>
+        
+        <div class="grid grid-cols-1 lg:hidden gap-6 mt-8">
+            <div class="p-6 shadow-[0_2px_4px_rgba(171,190,209,0.2)]">
+                <img src="Images/Icon (1).svg" alt="" class="m-auto mb-4">
+                <h3 class="text-xl font-bold text-[#4D4D4D]">Membership Organisations</h3>
+                <p class="text-[#717171] text-sm mt-2">Full automation of membership renewals and payments</p>
             </div>
-    
-            <div class="flex" id="service_section">
-                <div class="w-[28%] m-auto mt-4 pt-6 pb-6 pl-8 pr-8 shadow-[0_2px_4px_rgba(171,190,209,0.2)]" id="service_card">
-                    <div class="m-auto w-[270px] mb-2">
-                        <img src="Images/Icon (1).svg" alt="" class="m-auto mb-4">
-                        <h3 class="text-[28px] font-bold text-[#4D4D4D] leading-9">Membership Organisations</h3>
-                    </div>
+            <div class="p-6 shadow-[0_2px_4px_rgba(171,190,209,0.2)]">
+                <img src="Images/Icon (2).svg" alt="" class="m-auto mb-4">
+                <h3 class="text-xl font-bold text-[#4D4D4D]">National Associations</h3>
+                <p class="text-[#717171] text-sm mt-2">Full automation of membership renewals and payments</p>
+            </div>
+            <div class="p-6 shadow-[0_2px_4px_rgba(171,190,209,0.2)]">
+                <img src="Images/Icon (3).svg" alt="" class="m-auto mb-4">
+                <h3 class="text-xl font-bold text-[#4D4D4D]">Clubs And Groups</h3>
+                <p class="text-[#717171] text-sm mt-2">Full automation of membership renewals and payments</p>
+            </div>
+        </div>
 
-                    <p class="text-[#717171] text-sm font-normal leading-5">
-                        Our membership management software provides full automation of membership renewals and payments
-                    </p>
+        <div class="hidden lg:flex flex-wrap" id="service_section">
+            <div class="w-[28%] m-auto mt-4 pt-6 pb-6 pl-8 pr-8 shadow-[0_2px_4px_rgba(171,190,209,0.2)]" id="service_card">
+                <div class="m-auto mb-2">
+                    <img src="Images/Icon (1).svg" alt="" class="m-auto mb-4">
+                    <h3 class="text-[28px] font-bold text-[#4D4D4D] leading-9">Membership Organisations</h3>
                 </div>
-    
-                <div class="w-[28%] m-auto mt-4 pt-6 pb-6 pl-8 pr-8 shadow-[0_2px_4px_rgba(171,190,209,0.2)]" id="service_card">
-                    <div class="m-auto w-[270px] mb-2">
-                        <img src="Images/Icon (2).svg" alt="" class="m-auto mb-4">
-                        <h3 class="text-[28px] font-bold text-[#4D4D4D] leading-9">National Associations</h3>
-                    </div>
 
-                    <p class="text-[#717171] text-sm font-normal leading-5">
-                        Our membership management software provides full automation of membership renewals and payments
-                    </p>
-                </div>
-    
-                <div class="w-[28%] m-auto mt-4 pt-6 pb-6 pl-8 pr-8 shadow-[0_2px_4px_rgba(171,190,209,0.2)]" id="service_card">
-                    <div class="m-auto w-[270px] mb-2">
-                        <img src="Images/Icon (3).svg" alt="" class="m-auto mb-4">
-                        <h3 class="text-[28px] font-bold text-[#4D4D4D] leading-9">Clubs And <br>Groups</h3>
-                    </div>
+                <p class="text-[#717171] text-sm font-normal leading-5">
+                    Our membership management software provides full automation of membership renewals and payments
+                </p>
+            </div>
 
-                    <p class="text-[#717171] text-sm font-normal leading-5">
-                        Our membership management software provides full automation of membership renewals and payments
-                    </p>
+            <div class="w-[28%] m-auto mt-4 pt-6 pb-6 pl-8 pr-8 shadow-[0_2px_4px_rgba(171,190,209,0.2)]" id="service_card">
+                <div class="m-auto mb-2">
+                    <img src="Images/Icon (2).svg" alt="" class="m-auto mb-4">
+                    <h3 class="text-[28px] w-[75%] m-auto font-bold text-[#4D4D4D] leading-9">National Associations</h3>
                 </div>
+
+                <p class="text-[#717171] text-sm font-normal leading-5">
+                    Our membership management software provides full automation of membership renewals and payments
+                </p>
+            </div>
+
+            <div class="w-[28%] m-auto mt-4 pt-6 pb-6 pl-8 pr-8 shadow-[0_2px_4px_rgba(171,190,209,0.2)]" id="service_card">
+                <div class="m-auto mb-2">
+                    <img src="Images/Icon (3).svg" alt="" class="m-auto mb-4">
+                    <h3 class="text-[28px] font-bold text-[#4D4D4D] leading-9">Clubs And <br>Groups</h3>
+                </div>
+
+                <p class="text-[#717171] text-sm font-normal leading-5">
+                    Our membership management software provides full automation of membership renewals and payments
+                </p>
             </div>
         </div>
    </div>
 
     <div>
-        <div class="w-[85%] flex justify-around items-center m-auto mt-60" id="feature">
-            <div class="w-[35%]">
+        <div class="w-[90%] lg:w-[85%] m-auto flex flex-col lg:flex-row justify-around items-center lg:mt-60" id="feature">
+            <div class="w-full lg:w-[35%]">
                 <img src="Images/Frame 35.svg" alt="Mobile-Login" class="w-full m-auto">
             </div>
 
-            <div class="w-[50%]">
-                <div class="w-[100%] mb-8" >
-                    <h2 class="text-[#4D4D4D] text-4xl font-semibold mb-4 leading-11">
+            <div class="w-full lg:w-1/2">
+                <div class="w-full mb-8">
+                    <h2 class="text-[#4D4D4D] text-2xl text-center md:text-3xl lg:text-left lg:text-4xl font-semibold mb-4 leading-11">
                         The unseen of spending three years at Pixelgrade
                     </h2>
-                    <p class="text-[#717171] text-sm font-normal leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est 
+                    <p class="text-[#717171] text-sm text-center lg:text-left font-normal leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est 
                         varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit 
                         amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
                     </p>
                 </div>
 
-                <button class="bg-[#4CAF4F] pt-3.5 pb-3.5 pl-8 pr-8 text-white font-medium rounded-sm">
-                    <a href="#">Learn More</a>
-                </button>
+                <div class="text-center lg:text-left mt-2 md:mt-6">
+                    <button class="bg-[#4CAF4F] text-white py-3 px-6 rounded-sm lg:pt-3.5 lg:pb-3.5 lg:pl-8 lg:pr-8 font-medium lg:mt-0">Learn More</button>
+                </div>
             </div>
         </div>
 
-        <div class="bg-[#F5F7FA] w-full mt-12 pt-16 pb-16 pl-36 pr-36">
-            <div class="w-[90%] flex justify-between items-center m-auto" id="testimonial">
-                <div class="w-[40%] m-auto ">
-                    <h2 class="text-[#4D4D4D] text-4xl font-semibold leading-11 mb-2">Helping a local <br><span class="text-[#4CAF4F]">business reinvent itself</span></h2>
-                    <p class="text-[#18191F] text-base font-normal leading-6">We reached here with our hard work and dedication</p>
+        <div class="bg-[#F5F7FA] w-full mt-8 pt-8 pb-8 lg:mt-12 lg:pt-16 lg:pb-16 lg:pl-36 lg:pr-36">
+            <div class="w-[90%] flex flex-col md:flex-row md:justify-between md:items-center m-auto" id="testimonial">
+                <div class="text-center w-[90%] md:text-left md:w-[45%] lg:w-[40%] m-auto">
+                    <h2 class="text-[#4D4D4D] text-2xl md:text-3xl font-semibold leading-tight lg:text-4xl lg:leading-11 mb-2">Helping a local <br><span class="text-[#4CAF4F]">business reinvent itself</span></h2>
+                    <p class="text-[#18191F] text-base font-normal leading-tight md:leading-6">We reached here with our hard work and dedication</p>
                 </div>
-    
-                <div class="grid grid-cols-2 w-[50%] gap-10 m-auto">
-                    <div class="flex items-center gap-4">
+
+                <div class="grid grid-cols-2 gap-4 w-[90%] mt-8 md:w-[50%] md:gap-6 lg:gap-10 m-auto">
+                    <div class="flex items-center gap-3 md:gap-4">
                         <img src="Images/Icon (4).svg" alt="">
                         <div>
-                            <h3 class="text-[#4D4D4D] text-[28px] font-bold leading-9">2,245,341</h3>
-                            <p class="text-[#717171] text-base font-normal leading-6">Members</p>
+                            <h3 class="text-[#4D4D4D] text-xl md:text-[28px] font-bold leading-9">2,245,341</h3>
+                            <p class="text-[#717171] text-sm md:text-base font-normal leading-6">Members</p>
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-3 md:gap-4">
                         <img src="Images/Icon.png" alt="">
                         <div>
-                            <h3 class="text-[#4D4D4D] text-[28px] font-bold leading-9">46,328</h3>
-                            <p class="text-[#717171] text-base font-normal leading-6">Clubs</p>
+                            <h3 class="text-[#4D4D4D] text-xl md:text-[28px] font-bold leading-9">46,328</h3>
+                            <p class="text-[#717171] text-sm md:text-base font-normal leading-6">Clubs</p>
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-3 md:gap-4">
                         <img src="Images/Icon (6).svg" alt="">
                         <div>
-                            <h3 class="text-[#4D4D4D] text-[28px] font-bold leading-9">828,867</h3>
-                            <p class="text-[#717171] text-base font-normal leading-6">Event Bookings</p>
+                            <h3 class="text-[#4D4D4D] text-xl md:text-[28px] font-bold leading-9">828,867</h3>
+                            <p class="text-[#717171] text-sm md:text-base font-normal leading-6">Event Bookings</p>
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-3 md:gap-4">
                         <img src="Images/Icon (7).svg" alt="">
                         <div>
-                            <h3 class="text-[#4D4D4D] text-[28px] font-bold leading-9">1,926,436</h3>
-                            <p class="text-[#717171] text-base font-normal leading-6">Payments</p>
+                            <h3 class="text-[#4D4D4D] text-xl md:text-[28px] font-bold leading-9">1,926,436</h3>
+                            <p class="text-[#717171] text-sm md:text-base font-normal leading-6">Payments</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="w-full mt-12">
-            <div class="flex justify-around items-center w-[85%] m-auto">
-                <div class="w-[35%]">
-                    <img src="Images/pana.svg" alt="" class="w-[100%] m-auto">
+        <div class="w-full mt-8">
+            <div class="flex flex-col justify-between items-center w-[90%] m-auto lg:flex-row lg:justify-around lg:items-center lg:w-[85%]">
+                <div class="w-full lg:w-[35%] mb-4">
+                    <img src="Images/pana.svg" alt="" class="w-full m-auto">
                 </div>
 
-                <div class="w-[50%]">
+                <div class=" mt-6 m-auto text-center lg:text-left lg:w-[50%]">
                     <div class="w-[100%] mb-8">
-                        <h2 class="text-[#4D4D4D] text-4xl font-semibold leading-11 mb-4">How to design your site footer like we did</h2>
-                        <p class="text-[#717171] text-sm font-normal leading-5">
+                        <h2 class="text-[#4D4D4D] text-2xl leading-tight md:text-3xl lg:text-4xl font-semibold md:leading-11 mb-4">How to design your site footer like we did</h2>
+                        <p class="text-[#717171] text-sm font-normal leading-tight md:leading-5">
                             Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. 
                             Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod 
                             augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, 
@@ -192,14 +209,14 @@
             </div>
         </div>
 
-        <div class="mt-12 w-full bg-[#F5F7FA]">
-            <div class="w-[95%] flex justify-around items-center m-auto pt-8 pb-8 pl-36 pr-36 gap-[78px]">
-                <div class="w-[30%] mt-4">
+        <div class="mt-6 w-full bg-[#F5F7FA] pt-8 pb-8">
+            <div class="w-[90%] flex flex-col justify-center items-center m-auto gap-6 lg:w-[95%] lg:flex-row lg:justify-around lg:pt-8 lg:pb-8 lg:pl-36 lg:pr-36 lg:gap-[78px]">
+                <div class="md:w-[30%] mt-4">
                     <img src="Images/image 9.svg" alt="" class="w-full m-auto">
                 </div>
 
-                <div class="w-[65%] mt-4">
-                    <p class="text-[#717171] text-base font-medium leading-6 mb-4">
+                <div class="w-full mt-4 md:w-[65%] m-auto md:m-0 md:mt-4">
+                    <p class="text-[#717171] text-base text-center font-medium leading-tight md:leading-6 mb-4 md:text-left">
                         Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. 
                         Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, 
                         nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum 
@@ -207,16 +224,16 @@
                         condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
                     </p>
 
-                    <div class="mb-8">
-                        <h4 class="text-[#4CAF4F] text-xl font-semibold leading-7 mb-2">Tim Smith</h4>
-                        <p class="text-[#89939E] text-base font-normal leading-6">British Dragon Boat Racing Association</p>
+                    <div class="w-[90%] rounded-lg p-4 mb-8 m-auto bg-white shadow-[0_16px_32px_rgba(171, 190, 209, 0.4)] lg:rounded-none lg:shadow-none lg:p-0 lg:m-0 lg:mb-8 lg:w-[65%] lg:bg-[#F5F7FA]">
+                        <h4 class="text-[#4CAF4F] text-xl font-semibold leading-7 mb-2 text-center lg:text-left">Tim Smith</h4>
+                        <p class="text-[#89939E] text-base font-normal leading-6 text-center lg:text-left">British Dragon Boat Racing Association</p>
                     </div>
 
-                    <div class="flex justify-between items-center">
-                        <img src="Images/Frame 10.svg" alt="">
+                    <div class="w-[90%] flex flex-col justify-between items-center lg:flex-row m-auto">
+                        <img src="Images/Frame 10.svg" alt="" class="mb-4 w-full">
 
                         <div class="flex justify-between items-center p-2">
-                            <a href="#" class="flex justify-between items-center gap-2">
+                            <a href="#" class="flex justify-between items-center lg:gap-2">
                                 <h4 class="text-[#4CAF4F] text-xl font-semibold leading-7">Meet all customers</h4>
                                 <img src="Images/Right.svg" alt="" class="">
                             </a>
@@ -226,16 +243,16 @@
             </div>
         </div>
 
-        <div class="mt-12 w-full">
-            <div>
-                <div class="text-center w-[45%] m-auto">
-                    <h2 class="text-[#4D4D4D] text-4xl font-semibold leading-11 mb-2">Caring is the new marketing</h2>
-                    <p class="text-[#717171] text-base font-normal leading-6">The Nexcent blog is the best place to read about the latest membership insights, trends and more. 
+        <div class="mt-8 w-full">
+            <div class="w-[90%] m-auto">
+                <div class="text-center w-full lg:w-[45%] m-auto pb-4">
+                    <h2 class="text-[#4D4D4D] text-2xl font-semibold leading-tight mb-4 md:text-3xl lg:text-4xl md:leading-11 lg:mb-2">Caring is the new marketing</h2>
+                    <p class="text-[#717171] text-base font-normal leading-tight md:leading-6">The Nexcent blog is the best place to read about the latest membership insights, trends and more. 
                         See who's joining the community, read about how our community are increasing their membership income and lot's more.
                     ​</p>
                 </div>
 
-                <div class="w-[85%] grid grid-cols-1 md:grid-cols-3 gap-6 m-auto mt-4" id="blog">
+                <div class="w-[90%] grid grid-cols-1 gap-24 lg:w-[85%] lg:grid-cols-3 lg:gap-6 m-auto mt-4">
                     <div class="w-full rounded-lg relative">
                         <img src="Images/image 18.png" alt="" class="w-full object-cover">
 
@@ -283,85 +300,57 @@
     </div>
 
     <footer class="mt-36">
-        <div class="text-center w-full bg-[#F5F7FA] pt-8 pb-8">
-            <h1 class="text-[#263238] text-[64px] font-semibold leading-[76px] mt-8 w-1/2 m-auto">Pellentesque suscipit fringilla libero eu.</h1>
-            <button class="bg-[#4CAF4F] pt-3.5 pb-3.5 pl-8 pr-8 text-white font-medium rounded-sm mt-8">
-                <a href="#" class="flex items-center gap-2">
-                    <p class="text-white text-base font-medium leading-6">Get a Demo</p>
-                    <img src="Images/Down.svg" alt="" class="mt-0.5">
-                </a>
+        <div class="text-center w-full bg-[#F5F7FA] pt-8 pb-8 px-4">
+            <h1 class="text-[#263238] text-4xl md:text-5xl lg:text-[64px] font-semibold leading-tight md:leading-12 lg:leading-[76px] mt-8 md:w-1/2 mx-auto">
+                Pellentesque suscipit fringilla libero eu.
+            </h1>
+            <button class="bg-[#4CAF4F] py-3.5 px-8 text-white font-medium rounded-sm mt-8 inline-flex items-center gap-2">
+                <p class="text-white text-base font-medium leading-6">Get a Demo</p>
+                <img src="Images/Down.svg" alt="" class="mt-0.5">
             </button>
         </div>
-
-        <div class="w-full bg-[#263238] pt-16 pb-16 pl-[165px] pr-[165px] flex">
-            <div class="w-[95%] m-auto flex gap-32">
-                <div class="w-[30%] text-white">
+    
+        <div class="w-full bg-[#263238] pt-16 pb-16 px-6 md:px-20 lg:px-32">
+            <div class="w-full flex flex-col lg:flex-row lg:gap-32 items-center lg:items-start text-center lg:text-left">
+                
+                <div class="w-full lg:w-[30%] text-white mb-10 lg:mb-0">
                     <a href="#">
-                        <img src="Images/Logo 2.svg" alt="" class="mb-10">
+                        <img src="Images/Logo 2.svg" alt="" class="mb-6 mx-auto lg:mx-0">
                     </a>
                     <p class="text-sm font-normal leading-5 mb-2">Copyright © 2020 Nexcent ltd.</p>
-                    <p class="text-sm font-normal leading-5 mb-10">All rights reserved</p>
-                    <div class="flex items-center gap-4">
-                        <a href="#">
-                            <img src="Images/Social Icons.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="Images/Social Icons 2.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="Images/Social Icons 3.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="Images/Social Icons 4.svg" alt="">
-                        </a>                    
+                    <p class="text-sm font-normal leading-5 mb-6">All rights reserved</p>
+                    <div class="flex justify-center lg:justify-start gap-4">
+                        <a href="#"><img src="Images/Social Icons.svg" alt=""></a>
+                        <a href="#"><img src="Images/Social Icons 2.svg" alt=""></a>
+                        <a href="#"><img src="Images/Social Icons 3.svg" alt=""></a>
+                        <a href="#"><img src="Images/Social Icons 4.svg" alt=""></a>
                     </div>
                 </div>
     
-                <div class="flex justify-around space-x-[40px] w-[65%] m-auto">
-                    <div class="flex flex-col space-y-3 text-white w-[20%]">
-                        <h4 class="text-xl font-semibold leading-7 mb-6">Company</h4>
-                        <p class="text-sm font-normal leading-5">
-                            <a href="#">About us</a>
-                        </p>
-                        <p class="text-sm font-normal leading-5">
-                            <a href="#">Blog</a>
-                        </p>
-                        <p class="text-sm font-normal leading-5">
-                            <a href="#">Contact us</a>
-                        </p>
-                        <p class="text-sm font-normal leading-5">
-                            <a href="#">Pricing</a>
-                        </p>
-                        <p class="text-sm font-normal leading-5">
-                            <a href="#">Testimonials</a>
-                        </p>
+                <div class="w-full lg:w-[65%] flex flex-wrap justify-around text-white gap-10">
+                    <div class="w-1/2 md:w-[20%] flex flex-col space-y-3">
+                        <h4 class="text-xl font-semibold leading-7 mb-4">Company</h4>
+                        <a href="#" class="text-sm font-normal leading-5">About us</a>
+                        <a href="#" class="text-sm font-normal leading-5">Blog</a>
+                        <a href="#" class="text-sm font-normal leading-5">Contact us</a>
+                        <a href="#" class="text-sm font-normal leading-5">Pricing</a>
+                        <a href="#" class="text-sm font-normal leading-5">Testimonials</a>
                     </div>
     
-                    <div class="flex flex-col space-y-3 text-white w-[20%]">
-                        <h4 class="text-xl font-semibold leading-7 mb-6">Support</h4>
-                        <p class="text-sm font-normal leading-5">
-                            <a href="#">Help center</a>
-                        </p>
-                        <p class="text-sm font-normal leading-5">
-                            <a href="#">Terms of service</a>
-                        </p>
-                        <p class="text-sm font-normal leading-5">
-                            <a href="#">Legal</a>
-                        </p>
-                        <p class="text-sm font-normal leading-5">
-                            <a href="#">Privacy policy</a>
-                        </p>
-                        <p class="text-sm font-normal leading-5">
-                            <a href="#">Status</a>
-                        </p>
+                    <div class="w-1/2 md:w-[20%] flex flex-col space-y-3">
+                        <h4 class="text-xl font-semibold leading-7 mb-4">Support</h4>
+                        <a href="#" class="text-sm font-normal leading-5">Help center</a>
+                        <a href="#" class="text-sm font-normal leading-5">Terms of service</a>
+                        <a href="#" class="text-sm font-normal leading-5">Legal</a>
+                        <a href="#" class="text-sm font-normal leading-5">Privacy policy</a>
+                        <a href="#" class="text-sm font-normal leading-5">Status</a>
                     </div>
     
-                    <div class="flex flex-col space-y-3 text-white w-[40%]">
-                        <h4 class="text-xl font-semibold leading-7 mb-6">Stay up to date</h4>
+                    <div class="w-full md:w-[40%] flex flex-col space-y-4">
+                        <h4 class="text-xl font-semibold leading-7">Stay up to date</h4>
                         <div class="flex items-center relative">
                             <input type="email" placeholder="Your email address" 
-                                class="w-full p-4 rounded-lg bg-[#525b60] text-[#D9DBE1] text-sm font-normal leading-5 focus:outline-none focus:ring-2"
-                            >
+                                class="w-full p-4 rounded-lg bg-[#525b60] text-[#D9DBE1] text-sm font-normal leading-5 focus:outline-none focus:ring-2">
                             <button class="absolute top-1/2 right-4 -translate-y-1/2">
                                 <img src="Images/send.svg" alt="send button">
                             </button>
@@ -371,6 +360,6 @@
             </div>
         </div>
     </footer>
-
+    
 </body>
 </html>
